@@ -1,11 +1,11 @@
 import './App.css';
 
 import Header from "./components/Header";
-import Box from "./components/box";
+import Box from "./components/Box";
 
 function App() {
   return (
-    <div>
+    <div class="container">
       <Header />
       <Box />
     </div>
