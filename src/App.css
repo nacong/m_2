@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {font-size:100%;vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+body {min-width:320px;background-color:#fff}
+
+
+a {color:#333;text-decoration:none} a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+.show {display:block}
+.hide {display:none}
+
+* {
+  background-color:#FAF5F5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  padding:50px;
+  font-size:40px;
+  text-align:center;
+  color:#6965ff; 
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.artist {
+  padding: 20px 20px;
+  font-size:45px;
+  margin: 0 auto;
+  color:#A9A4F0;  
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#A1 {
+  color:#A9A4F0;  
+  font-size:25px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.art {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size:45px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+#mdtibox {
+  width:450px; 
+  height:650px; 
+  background-color:#f4f4f9;  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+  border-radius: 10px;
+  text-align:center;
+}
+
+#title {
+  color:#A9A4F0;
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding-top:20px;
+  background-color:#f4f4f9;
+  border-radius: 10px;
+  color:#6965ff;
+  padding-bottom:5px;
+}
+
+#img {
+  width:370px; 
+  height:370px;
+  border-radius: 10px;
+}
+
+#artist_2 {
+  font-size:20px;
+  color:#6965ff;
+  padding-bottom:20px;
+}
+
+#tag {
+  float:left;
+  margin-top:20px;
+  background-color:#f4f4f9;  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+  border-radius: 10px;
+  text-align:center;
+  font-size:20px;
+  color:skyblue;
+  margin:10px 10px;
+  border:7px solid #f4f4f9;
+  
+}
+
+#tags {
+  padding:15px 35px 25px 25px;
 }
